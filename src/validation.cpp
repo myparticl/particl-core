@@ -5796,9 +5796,44 @@ bool CChainState::LoadGenesisBlock(const CChainParams& chainparams)
     // thing loaded at this point.
     if (mapBlockIndex.count(chainparams.GenesisBlock().GetHash()))
         return true;
-
+    //Genesis Block created code    
+    uint256 hashGenesisBlock = uint256S("0x0000ee0784c195317ac95623e22fddb8c7b8825dc3998e0bb924d66866eccf4c");
+    CBlock &block = const_cast<CBlock&>(chainparams.GenesisBlock());
+		printf("%s\n",block.GetHash().ToString().c_str());
+		printf("%s\n",hashGenesisBlock.ToString().c_str());
+		printf("%s\n",block.hashMerkleRoot.ToString().c_str());  
+    
+    if(true && block.GetHash()!=hashGenesisBlock)
+    {
+        printf("Searching for genesis block...\n");
+        arith_uint256 hashTarget = arith_uint256().SetCompact(block.nBits);
+        uint256 thash;
+        while(true)
+        {
+            thash = block.GetHash();
+            if(UintToArith256(thash)<=hashTarget) break;
+            if((block.nNonce & 0xFFF) == 0) 
+            {
+                printf("nonce %08X:hash=%s (target=%s",block.nNonce,thash.ToString().c_str(),hashTarget.ToString().c_str());
+            }
+            ++block.nNonce;
+            if (block.nNonce == 0)
+            {
+                printf("NONCE WRAPPED, incrementing time\n");
+                ++block.nTime;
+            }
+        }
+ 			  printf("block.nTime = %u \n", block.nTime);
+        printf("block.nNonce = %u \n", block.nNonce);
+        printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
+        printf("block.hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
+        printf("block.hashWitnessMerkleRoot = %s\n", block.hashWitnessMerkleRoot.ToString().c_str());
+    }
+    //printf"\n");
+    assert(block.GetHash() == hashGenesisBlock);   
+    
     try {
-        CBlock &block = const_cast<CBlock&>(chainparams.GenesisBlock());
+        //CBlock &block = const_cast<CBlock&>(chainparams.GenesisBlock());
         CDiskBlockPos blockPos = SaveBlockToDisk(block, 0, chainparams, nullptr);
         if (blockPos.IsNull())
             return error("%s: writing genesis block to disk failed", __func__);
