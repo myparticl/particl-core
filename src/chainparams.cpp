@@ -153,27 +153,27 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
 }
 
 const std::pair<const char*, CAmount> regTestOutputs[] = {
-    std::make_pair("585c2b3914d9ee51f8e710304e386531c3abcc82", 10000 * COIN),
-    std::make_pair("c33f3603ce7c46b423536f0434155dad8ee2aa1f", 10000 * COIN),
-    std::make_pair("72d83540ed1dcf28bfaca3fa2ed77100c2808825", 10000 * COIN),
-    std::make_pair("69e4cc4c219d8971a253cd5db69a0c99c4a5659d", 10000 * COIN),
-    std::make_pair("eab5ed88d97e50c87615a015771e220ab0a0991a", 10000 * COIN),
-    std::make_pair("119668a93761a34a4ba1c065794b26733975904f", 10000 * COIN),
-    std::make_pair("6da49762a4402d199d41d5778fcb69de19abbe9f", 10000 * COIN),
-    std::make_pair("27974d10ff5ba65052be7461d89ef2185acbe411", 10000 * COIN),
-    std::make_pair("89ea3129b8dbf1238b20a50211d50d462a988f61", 10000 * COIN),
-    std::make_pair("3baab5b42a409b7c6848a95dfd06ff792511d561", 10000 * COIN),
+    std::make_pair("235f61c7f9fd8618efec8a120089c0712d65a7e3", 10000 * COIN),
+    std::make_pair("7830a530109c3649a3fc39e30402385522a3956f", 10000 * COIN),
+    std::make_pair("17fa068bb6f855bcfbc6af9e89a431942d4445ee", 10000 * COIN),
+    std::make_pair("bd9379da5ece09172d0d8f4071638d68f265443b", 10000 * COIN),
+    std::make_pair("dfdae75cb66bdeae1901938e5297c49969c35bed", 10000 * COIN),
+    std::make_pair("1e16370045bc2e26747782e679fff037512f5c08", 10000 * COIN),
+    std::make_pair("1ac5fca8021611a70c8ae55bd5bb2e4728235384", 10000 * COIN),
+    std::make_pair("24b96fe3560f0bd0cc8e077933f019994322da50", 10000 * COIN),
+    std::make_pair("9a85015717e5ba846b684e342859970b02703387", 10000 * COIN),
+    std::make_pair("543d12073213c639370fd269547d9b9fc31d28b3", 10000 * COIN),
 
-    std::make_pair("649b801848cc0c32993fb39927654969a5af27b0", 5000 * COIN),
-    std::make_pair("d669de30fa30c3e64a0303cb13df12391a2f7256", 5000 * COIN),
-    std::make_pair("f0c0e3ebe4a1334ed6a5e9c1e069ef425c529934", 5000 * COIN),
-    std::make_pair("27189afe71ca423856de5f17538a069f22385422", 5000 * COIN),
-    std::make_pair("0e7f6fe0c4a5a6a9bfd18f7effdd5898b1f40b80", 5000 * COIN),
+    std::make_pair("38f8ef57f58e32383d204cd3c310be335cf7b925", 5000 * COIN),
+    std::make_pair("7ca6bf150077dd0bb1fad88fd2ad9027a6205c77", 5000 * COIN),
+    std::make_pair("e2baf167d4562221e3177d48eef7f0b441d6f329", 5000 * COIN),
+    std::make_pair("8e52355e2df01b15bdd7d299a780f266760da999", 5000 * COIN),
+    std::make_pair("8cbea35fd6fbd894376b46232f417db50bc3ee89", 5000 * COIN),
 };
 const size_t nGenesisOutputsRegtest = sizeof(regTestOutputs) / sizeof(regTestOutputs[0]);
 
 const std::pair<const char*, CAmount> genesisOutputs[] = {
-    std::make_pair("62a62c80e0b41f2857ba83eb438d5caa46e36bcb",7017084118),
+    /*std::make_pair("62a62c80e0b41f2857ba83eb438d5caa46e36bcb",7017084118),
     std::make_pair("c515c636ae215ebba2a98af433a3fa6c74f84415",221897417980),
     std::make_pair("711b5e1fd0b0f4cdf92cb53b00061ef742dda4fb",120499999),
     std::make_pair("20c17c53337d80408e0b488b5af7781320a0a311",18074999),
@@ -201,48 +201,78 @@ const std::pair<const char*, CAmount> genesisOutputs[] = {
     std::make_pair("a4a73d99269639541cb7e845a4c6ef3e3911fcd6",108968353176),
     std::make_pair("27929b31f11471aa4b77ca74bb66409ff76d24a2",126271503135),
     std::make_pair("2d6248888c7f72cc88e4883e4afd1025c43a7f0e",35102718156),
-    std::make_pair("25d8debc253f5c3f70010f41c53348ed156e7baa",80306152234),
+    std::make_pair("25d8debc253f5c3f70010f41c53348ed156e7baa",80306152234),*/
+    std::make_pair("234f8d7f8c7085baddd32e6048f4ec239f94acec",7017084118),
+    std::make_pair("7686c73a824b14cda1615c741b0e9f628ca69e43",221897417980),
+    std::make_pair("1d52af3186038ec444d51c06112dd0d0ab3ad62b",120499999),
+    std::make_pair("28e1bc847959ef358ee400e49e0c22062dcc6a8c",18074999),
+    std::make_pair("5acf3b4364685a5b3c2c7d67598d714d541c0ed5",92637054909),
+    std::make_pair("2484a5e32b4240816c9760957fb4a9675e702df5",3100771006662),
+    std::make_pair("8a8c90fcd88031eb4ed59e672b8dcb81bb2af5a2",465115650998),
+    std::make_pair("e13282973aee97bf02201c465553f6a0f6370c3f",669097504996),
+    std::make_pair("411c4c2ff0354c22556438d56f24ec03ec549c21",802917005996),
+    std::make_pair("52ab9537580d602f123dcae886d4b2f9b68d8d04",267639001997),
+    std::make_pair("a3036ddbd5aef2ea55e79f2ee6866cddf6dc5466",267639001997),
+    std::make_pair("2cbe8716e6f2ca880cd7083c0123b00f1afd149a",254257051898),
+    std::make_pair("93d10284f6f73e221cfc69339d6abca4dc45ad91",1204260290404),
+    std::make_pair("62f9f9d83209670c70ebe0aa28515093df8463fa",1204270995964),
+    std::make_pair("7b54478cd891e58ee21b5db966e11c1742d60673",236896901156),
+    std::make_pair("38e32e3edf13f0827245a05c6e1b6d1a5fbab58b",155127107700),
+    std::make_pair("9077d34f2102e2f5cdf4661410bb6cdce7847d5a",115374999),
+    std::make_pair("c04ce2a9310c7830a7c23e1b4a565a4775ba7459",17306249),
+    std::make_pair("cb1353a07d124fdde6ef6a16faae70ba7dad4ddb",133819500998),
+    std::make_pair("f4d4580b4ff181822918a72489344423be5887a7",133713917412),
+    std::make_pair("b8be6f36317b1e07f9d345d6a3bead80f0eba1d0",173382671567),
+    std::make_pair("529a36397c25a71c5ad2dedbd3d52435ec41d534",245040727620),
+    std::make_pair("e6e1f627f8b0b5f65a5ae6cfb748a0e47f6885bb",200226012806),
+    std::make_pair("c858f8ba8e3a96ff72798a268649ced170b37fda",436119839355),
+    std::make_pair("67518254c2adb5ce0d3d149fedb3dd9b580fc64b",156118097804),
+    std::make_pair("e346aa4bc6cf4d77efae79591dc92c411dc7cc12",108968353176),
+    std::make_pair("291eaaef8a2deac70877e96f738befe1007982e6",126271503135),
+    std::make_pair("1e243b0535d6c5b399ff869c48a74f7c92ce85d1",35102718156),
+    std::make_pair("2b50627629cae7b55162059f4c134fb50963b088",80306152234),
+    
 };
 const size_t nGenesisOutputs = sizeof(genesisOutputs) / sizeof(genesisOutputs[0]);
 
 const std::pair<const char*, CAmount> genesisOutputsTestnet[] = {
-    std::make_pair("46a064688dc7beb5f70ef83569a0f15c7abf4f28",7017084118),
-    std::make_pair("9c97b561ac186bd3758bf690036296d36b1fd019",221897417980),
-    std::make_pair("118a92e28242a73244fb03c96b7e1429c06f979f",120499999),
-    std::make_pair("cae4bf990ce39624e2f77c140c543d4b15428ce7",18074999),
-    std::make_pair("9d6b7b5874afc100eb82a4883441a73b99d9c306",92637054909),
-    std::make_pair("f989e2deedb1f09ed10310fc0d7da7ebfb573326",3100771006662),
-    std::make_pair("4688d6701fb4ae2893d3ec806e6af966faf67545",465115650998),
-    std::make_pair("40e07b038941fb2616a54a498f763abae6d4f280",669097504996),
-    std::make_pair("c43f7c57448805a068a440cc51f67379ca946264",802917005996),
-    std::make_pair("98b7269dbf0c2e3344fb41cd60e75db16d6743a6",267639001997),
-    std::make_pair("85dceec8cdbb9e24fe07af783e4d273d1ae39f75",267639001997),
-    std::make_pair("ddc05d332b7d1a18a55509f34c786ccb65bbffbc",245040727620),
-    std::make_pair("8b04d0b2b582c986975414a01cb6295f1c33d0e9",1204260290404),
-    std::make_pair("1e9ff4c3ac6d0372963e92a13f1e47409eb62d37",1204270995964),
-    std::make_pair("687e7cf063cd106c6098f002fa1ea91d8aee302a",236896901156),
-    std::make_pair("dc0be0edcadd4cc97872db40bb8c2db2cebafd1c",155127107700),
-    std::make_pair("21efcbfe37045648180ac68b406794bde77f9983",115374999),
-    std::make_pair("deaf53dbfbc799eed1171269e84c733dec22f517",17306249),
-    std::make_pair("200a0f9dba25e00ea84a4a3a43a7ea6983719d71",133819500998),
-    std::make_pair("2d072fb1a9d1f7dd8df0443e37e9f942eab58680",133713917412),
-    std::make_pair("0850f3b7caf3b822bb41b9619f8edf9b277402d0",173382671567),
-    std::make_pair("ec62fbd782bf6f48e52eea75a3c68a4c3ab824c0",254257051898),
-    std::make_pair("c6dcb0065e98f5edda771c594265d61e38cf63a0",200226012806),
-    std::make_pair("e5f9a711ccd7cb0d2a70f9710229d0d0d7ef3bda",436119839355),
-    std::make_pair("cae1527d24a91470aeb796f9d024630f301752ef",156118097804),
-    std::make_pair("604f36860d79a9d72b827c99409118bfe16711bd",108968353176),
-    std::make_pair("f02e5891cef35c9c5d9a770756b240aba5ba3639",126271503135),
-    std::make_pair("8251b4983be1027a17dc3b977502086f08ba8910",35102718156),
-    std::make_pair("b991d98acde28455ecb0193fefab06841187c4e7",80306152234),
+    std::make_pair("47ee773a9809220234335a4d9228b05f0cc86eda",7017084118),
+    std::make_pair("cfcb4737512842dc49bdabcd8e7c6f9b176930a1",221897417980),
+    std::make_pair("92319ad616ace774f418405fb3615f00f07dc1fa",120499999),
+    std::make_pair("a9ec24916808bd32b2b50dcd4ced3a7d0f96698d",18074999),
+    std::make_pair("26c288e52c87ed9028eccc65de0023509068da93",92637054909),
+    std::make_pair("9b6a03caeb5b7a641f42570ab2a100c0ee7d9a6e",3100771006662),
+    std::make_pair("5747a0964aca5f13db0cbc9b71466e736c0d5c81",465115650998),
+    std::make_pair("1d5a4eabd6718914d8fb66d7243ad52c46d6b0f9",669097504996),
+    std::make_pair("6752ea9b9d9aa95e3de7c515b122d0b8fe892172",802917005996),
+    std::make_pair("4a0e49a46692013466ed9ca36bd1aee1c9eb897e",267639001997),
+    std::make_pair("a43e739ee6c40f1a41e4a63415852f1073dbaf86",267639001997),
+    std::make_pair("fa3b7f7054b88d0241828a9f19d354ff29806225",245040727620),
+    std::make_pair("46e2e9268de589a931275dfa51c89e091a486a6e",1204260290404),
+    std::make_pair("1d5f43deae1effdba5cdf77b28ec297caeb7b750",1204270995964),
+    std::make_pair("b901a7bf4688b2518598a9efb5edffef871ccc0b",236896901156),
+    std::make_pair("8c6f1d1f74050fcbf6f2fc7b3b2d5e971c21d1c3",155127107700),
+    std::make_pair("222288188a19db61fe9d1341a8be387edea4a5aa",115374999),
+    std::make_pair("bc5f38bca8e36b3514095459b696a04546360399",17306249),
+    std::make_pair("f6de8537f91e403c0418ce481140c29c3f298bcd",133819500998),
+    std::make_pair("5975f2a6cde4b2468e7e919a28b31e76ad30f0b3",133713917412),
+    std::make_pair("dff5dbf0d11782814888a9aeb70c1b0cd9fec125",173382671567),
+    std::make_pair("4d9f421b7a10330890d76baf960b5d363d5352fd",254257051898),
+    std::make_pair("6cee222035339f27722946ae890ab22c27c4aee4",200226012806),
+    std::make_pair("2cbe6cbef4f56fd00d3ad9b966fb160e3ca9202e",436119839355),
+    std::make_pair("ad1d720270f3deb70fd211cf73e9f7d33f7a217e",156118097804),
+    std::make_pair("80787e57362a0cdf0bc502517e806006f651a98c",108968353176),
+    std::make_pair("e2ed92db60593414eaf1c59ccfa5a0cdd4377bf7",126271503135),
+    std::make_pair("07e2d10989cfd6d07aec30fa72c12b5ec550ae69",35102718156),
+    std::make_pair("23639234cd1944eca3e889adf8e74ee958cb468a",80306152234),
 };
 const size_t nGenesisOutputsTestnet = sizeof(genesisOutputsTestnet) / sizeof(genesisOutputsTestnet[0]);
 
 
 static CBlock CreateGenesisBlockRegTest(uint32_t nTime, uint32_t nNonce, uint32_t nBits)
 {
-    const char *pszTimestamp = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
-
+    //const char *pszTimestamp = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
+    const char *pszTimestamp = "This is my Particl 2019-3-15 14:00:00 for regtest";
     CMutableTransaction txNew;
     txNew.nVersion = PARTICL_TXN_VERSION;
     txNew.SetType(TXN_COINBASE);
@@ -275,7 +305,8 @@ static CBlock CreateGenesisBlockRegTest(uint32_t nTime, uint32_t nNonce, uint32_
 
 static CBlock CreateGenesisBlockTestNet(uint32_t nTime, uint32_t nNonce, uint32_t nBits)
 {
-    const char *pszTimestamp = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
+    //const char *pszTimestamp = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
+    const char *pszTimestamp = "This is my Particl 2019-3-15 14:00:00 for testnet";
 
     CMutableTransaction txNew;
     txNew.nVersion = PARTICL_TXN_VERSION;
@@ -295,37 +326,37 @@ static CBlock CreateGenesisBlockTestNet(uint32_t nTime, uint32_t nNonce, uint32_
 
 
     // Foundation Fund Raiser Funds
-    // rVDQRVBKnQEfNmykMSY9DHgqv8s7XZSf5R fc118af69f63d426f61c6a4bf38b56bcdaf8d069
+    // rVDQRVBKnQEfNmykMSY9DHgqv8s7XZSf5R fc118af69f63d426f61c6a4bf38b56bcdaf8d069  PYQCm5hVEKtieKCbc8neCCSgCwfbhaAa6W
     OUTPUT_PTR<CTxOutStandard> out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 397364 * COIN;
-    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("fc118af69f63d426f61c6a4bf38b56bcdaf8d069") << OP_EQUAL;
+    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("f3c81a99eeeeeac82584464b1515d249e4bb9c7d") << OP_EQUAL;
     txNew.vpout.push_back(out);
 
-    // rVDQRVBKnQEfNmykMSY9DHgqv8s7XZSf5R fc118af69f63d426f61c6a4bf38b56bcdaf8d069
+    // rVDQRVBKnQEfNmykMSY9DHgqv8s7XZSf5R fc118af69f63d426f61c6a4bf38b56bcdaf8d069  PdB6aJxBMsgkHm4tPVBGUDMFVTztyzns22
     out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 296138 * COIN;
-    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("89ca93e03119d53fd9ad1e65ce22b6f8791f8a49") << OP_EQUAL;
+    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("cbed899fb0465746e5336c68ccd73a179025f3a0") << OP_EQUAL;
     txNew.vpout.push_back(out);
 
     // Community Initative
-    // rAybJ7dx4t6heHy99WqGcXkoT4Bh3V9qZ8 340288104577fcc3a6a84b98f7eac1a54e5287ee
+    // rAybJ7dx4t6heHy99WqGcXkoT4Bh3V9qZ8 340288104577fcc3a6a84b98f7eac1a54e5287ee  PcWuoRnfpvMimmAjoGjSgtW4gnYW5zsdkV
     out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 156675 * COIN;
-    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("89ca93e03119d53fd9ad1e65ce22b6f8791f8a49") << OP_EQUAL;
+    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("7f1cb0cb533ed35eb6777034777fd4e134ec2b03") << OP_EQUAL;
     txNew.vpout.push_back(out);
 
     // Contributors Left Over Funds
-    // rAvmLShYFZ78aAHhFfUFsrHMoBuPPyckm5 3379aa2a4379ae6c51c7777d72e8e0ffff71881b
+    // rAvmLShYFZ78aAHhFfUFsrHMoBuPPyckm5 3379aa2a4379ae6c51c7777d72e8e0ffff71881b  Pkajhc4c5MVkkTzjczyrDLgAjG99ZWzB3K
     out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 216346 * COIN;
-    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("89ca93e03119d53fd9ad1e65ce22b6f8791f8a49") << OP_EQUAL;
+    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("53576a52e8e6106db4c3213b9968e67ceb239619") << OP_EQUAL;
     txNew.vpout.push_back(out);
 
     // Reserved Particl for primary round
-    // rLWLm1Hp7im3mq44Y1DgyirYgwvrmRASib 9c8c6c8c698f074180ecfdb38e8265c11f2a62cf
+    // rLWLm1Hp7im3mq44Y1DgyirYgwvrmRASib 9c8c6c8c698f074180ecfdb38e8265c11f2a62cf 
     out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 996000 * COIN;
-    out->scriptPubKey = CScript() << 1512000000 << OP_CHECKLOCKTIMEVERIFY << OP_DROP << OP_HASH160<< ParseHex("9c8c6c8c698f074180ecfdb38e8265c11f2a62cf") << OP_EQUAL; // 2017-11-30
+    out->scriptPubKey = CScript() << 1512000000 << OP_CHECKLOCKTIMEVERIFY << OP_DROP << OP_HASH160<< ParseHex("18ab147bb483c92e89df8534886e3b480737bf68") << OP_EQUAL; // 2017-11-30
     txNew.vpout.push_back(out);
 
 
@@ -345,7 +376,8 @@ static CBlock CreateGenesisBlockTestNet(uint32_t nTime, uint32_t nNonce, uint32_
 
 static CBlock CreateGenesisBlockMainNet(uint32_t nTime, uint32_t nNonce, uint32_t nBits)
 {
-    const char *pszTimestamp = "BTC 000000000000000000c679bc2209676d05129834627c7b1c02d1018b224c6f37";
+    //const char *pszTimestamp = "BTC 000000000000000000c679bc2209676d05129834627c7b1c02d1018b224c6f37";
+    const char *pszTimestamp = "This is my Particl 2019-3-15 14:00:00";
 
     CMutableTransaction txNew;
     txNew.nVersion = PARTICL_TXN_VERSION;
@@ -365,36 +397,37 @@ static CBlock CreateGenesisBlockMainNet(uint32_t nTime, uint32_t nNonce, uint32_
     };
 
     // Foundation Fund Raiser Funds
-    // RHFKJkrB4H38APUDVckr7TDwrK11N7V7mx
+    // Ps3KXuZowK7R5NF9LygAxJwiZjShCgqkLY
     OUTPUT_PTR<CTxOutStandard> out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 397364 * COIN;
-    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("5766354dcb13caff682ed9451b9fe5bbb786996c") << OP_EQUAL;
+    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("d1a71777c47753bc974603016393dc52ee28f36c") << OP_EQUAL;
     txNew.vpout.push_back(out);
 
     out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 296138 * COIN;
-    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("5766354dcb13caff682ed9451b9fe5bbb786996c") << OP_EQUAL;
+    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("b5af2d6c9416e462a7885462b367d0f66b4ea0cd") << OP_EQUAL;
     txNew.vpout.push_back(out);
 
     // Community Initative
     // RKKgSiQcMjbC8TABRoyyny1gTU4fAEiQz9
     out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 156675 * COIN;
-    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("6e29c4a11fd54916d024af16ca913cdf8f89cb31") << OP_EQUAL;
+    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("24e2a23cd273b6a5ae30f65923d15e3a58061890") << OP_EQUAL;
     txNew.vpout.push_back(out);
 
     // Contributors Left Over Funds
     // RKiaVeyLUp7EmwHtCP92j8Vc1AodhpWi2U
     out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 216346 * COIN;
-    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("727e5e75929bbf26912dd7833971d77e7450a33e") << OP_EQUAL;
+    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("e3b4d44cd252b7a2ac832503ca7d79013cdee49c") << OP_EQUAL;
     txNew.vpout.push_back(out);
 
     // Reserved Particl for primary round
     // RNnoeeqBTkpPQH8d29Gf45dszVj9RtbmCu
     out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 996000 * COIN;
-    out->scriptPubKey = CScript() << 1512000000 << OP_CHECKLOCKTIMEVERIFY << OP_DROP << OP_HASH160<< ParseHex("9433643b4fd5de3ebd7fdd68675f978f34585af1") << OP_EQUAL; // 2017-11-30
+    //out->scriptPubKey = CScript() << 1512000000 << OP_CHECKLOCKTIMEVERIFY << OP_DROP << OP_HASH160<< ParseHex(//"9433643b4fd5de3ebd7fdd68675f978f34585af1") << OP_EQUAL; // 2017-11-30
+    out->scriptPubKey = CScript() << 1512000000 << OP_CHECKLOCKTIMEVERIFY << OP_DROP << OP_HASH160<< ParseHex("1a0b775f08c631c1ce8aa5b0e057f811e318a866") << OP_EQUAL; // 2017-11-30
     txNew.vpout.push_back(out);
 
 
@@ -467,7 +500,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1510704000; // November 15th, 2017.
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000467b28adaecf2f81c8");
+        //consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000467b28adaecf2f81c8");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0xff704cb42547da4efb2b32054c72c7682b7634ac34fda4ec88fe7badc666338c"); // 376100
@@ -497,27 +531,36 @@ public:
         nPruneAfterHeight = 100000;
 
         //genesis = CreateGenesisBlockMainNet(1500296400, 31429, 0x1f00ffff); // 2017-07-17 13:00:00
-        genesis = CreateGenesisBlockMainNet(1500296400, 31400, 0x1f00ffff); // 2017-07-17 13:00:00
+        //genesis = CreateGenesisBlockMainNet(1552629600, 102250, 0x1f00ffff); // 2017-07-17 13:00:00
+        genesis = CreateGenesisBlockMainNet(1552720800, 120070, 0x1f00ffff); // 2017-07-17 13:00:00
         consensus.hashGenesisBlock = genesis.GetHash();
 
         //assert(consensus.hashGenesisBlock == uint256S("0x0000ee0784c195317ac95623e22fddb8c7b8825dc3998e0bb924d66866eccf4c"));
         //assert(genesis.hashMerkleRoot == uint256S("0xc95fb023cf4bc02ddfed1a59e2b2f53edd1a726683209e2780332edf554f1e3e"));
         //assert(genesis.hashWitnessMerkleRoot == uint256S("0x619e94a7f9f04c8a1d018eb8bcd9c42d3c23171ebed8f351872256e36959d66c"));
+        
+        assert(consensus.hashGenesisBlock == uint256S("0x0000c67da342d15464cfa6b94f74eb7714831e6026952091a0d54640e2b483b4"));
+        assert(genesis.hashMerkleRoot == uint256S("0xf577a75ea8b0b07ec0e0dd265d79bd701cc87fa9f7143eee9de8923e96efcba8"));
+        assert(genesis.hashWitnessMerkleRoot == uint256S("0xf517c5f32b1ec201db56eaff8d66342152ababba3011b72b59d25ee614f84e06"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("mainnet-seed.particl.io");
-        vSeeds.emplace_back("dnsseed-mainnet.particl.io");
-        vSeeds.emplace_back("mainnet.particl.io");
+        //vSeeds.emplace_back("mainnet-seed.particl.io");
+        //vSeeds.emplace_back("dnsseed-mainnet.particl.io");
+        //vSeeds.emplace_back("mainnet.particl.io");
 
 
-        vDevFundSettings.emplace_back(0,
+        /*vDevFundSettings.emplace_back(0,
             DevFundSettings("RJAPhgckEgRGVPZa9WoGSWW24spskSfLTQ", 10, 60));
         vDevFundSettings.emplace_back(consensus.OpIsCoinstakeTime,
-            DevFundSettings("RBiiQBnQsVPPQkUaJVQTjsZM9K2xMKozST", 10, 60));
+            DevFundSettings("RBiiQBnQsVPPQkUaJVQTjsZM9K2xMKozST", 10, 60));*/
+        vDevFundSettings.emplace_back(0,
+            DevFundSettings("PecS12fAgUw3n8QsgAzra9bf19L2BAstCd", 10, 60));
+        vDevFundSettings.emplace_back(consensus.OpIsCoinstakeTime,
+            DevFundSettings("PkZXrtN8ZVu5Mp1dfmBLKJDkXeJUQ4wcJz", 10, 60));
 
 
         base58Prefixes[PUBKEY_ADDRESS]     = {0x38}; // P
@@ -555,7 +598,7 @@ public:
 
         checkpointData = {
             {
-                { 5000,     uint256S("0xe786020ab94bc5461a07d744f3631a811b4ebf424fceda12274f2321883713f4")},
+                /*{ 5000,     uint256S("0xe786020ab94bc5461a07d744f3631a811b4ebf424fceda12274f2321883713f4")},
                 { 15000,    uint256S("0xafc73ac299f2e6dd309077d230fccef547b9fc24379c1bf324dd3683b13c61c3")},
                 { 30000,    uint256S("0x35d95c12799323d7b418fd64df9d88ef67ef27f057d54033b5b2f38a5ecaacbf")},
                 { 91000,    uint256S("0x4d1ffaa5b51431918a0c74345e2672035c743511359ac8b1be67467b02ff884c")},
@@ -568,7 +611,8 @@ public:
                 { 282130,   uint256S("0xf720421256795081c1d985e997bb81d040d557f24b9e2d16a1c13d21734fb2b1")},
                 { 303640,   uint256S("0x7cc035d7888ee6d824cec8ff01a6287a71873d874f72a5fd3706d227b88f8e99")},
                 { 357320,   uint256S("0x20b01f2bef93197bb014d27125939cd8d4f6a34257fdb498ae64c8644b8f2289")},
-                { 376100,   uint256S("0xff704cb42547da4efb2b32054c72c7682b7634ac34fda4ec88fe7badc666338c")},
+                { 376100,   uint256S("0xff704cb42547da4efb2b32054c72c7682b7634ac34fda4ec88fe7badc666338c")},*/
+                { 0000,     uint256S("0x0000c67da342d15464cfa6b94f74eb7714831e6026952091a0d54640e2b483b4")},
             }
         };
 
@@ -641,7 +685,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1493596800; // May 1st 2017
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000003d577d5f2d3d2c767");
+        //consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000003d577d5f2d3d2c767");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000000000000000000");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0xeecbeafc4b338901e3dfb6eeaefc128ef477dfe1e6f0f96bd63da27caf113ddc"); // 331600
@@ -667,20 +712,22 @@ public:
         nPruneAfterHeight = 1000;
 
 
-        genesis = CreateGenesisBlockTestNet(1502309248, 5924, 0x1f00ffff);
+        //genesis = CreateGenesisBlockTestNet(1502309248, 5924, 0x1f00ffff);
+        genesis = CreateGenesisBlockTestNet(1552629600, 225979, 0x1f00ffff);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x0000594ada5310b367443ee0afd4fa3d0bbd5850ea4e33cdc7d6a904a7ec7c90"));
-        assert(genesis.hashMerkleRoot == uint256S("0x2c7f4d88345994e3849502061f6303d9666172e4dff3641d3472a72908eec002"));
-        assert(genesis.hashWitnessMerkleRoot == uint256S("0xf9e2235c9531d5a19263ece36e82c4d5b71910d73cd0b677b81c5e50d17b6cda"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000c0420ebf19eea6de962d12514df51adf033b59dbeddba287e8776fca7064"));
+        assert(genesis.hashMerkleRoot == uint256S("0x5cdb106e8cc597dc2ee3d2882251010dc86808a1ad27a5a8c35dc3dcf6042ff6"));
+        assert(genesis.hashWitnessMerkleRoot == uint256S("0xd5fb619c8e5fc283ae93234fb14ed734c7c98db9cfe15a83812b5f4fb9697cd7"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.particl.io");
-        vSeeds.emplace_back("dnsseed-testnet.particl.io");
+        //vSeeds.emplace_back("testnet-seed.particl.io");
+        //vSeeds.emplace_back("dnsseed-testnet.particl.io");
 
-        vDevFundSettings.push_back(std::make_pair(0, DevFundSettings("rTvv9vsbu269mjYYEecPYinDG8Bt7D86qD", 10, 60)));
+        //vDevFundSettings.push_back(std::make_pair(0, DevFundSettings("rTvv9vsbu269mjYYEecPYinDG8Bt7D86qD", 10, 60)));
+        vDevFundSettings.push_back(std::make_pair(0, DevFundSettings("pk7r8FrR7gFUZvJqHZn2U72c7zWJHS61ab", 10, 60)));
 
         base58Prefixes[PUBKEY_ADDRESS]     = {0x76}; // p
         base58Prefixes[SCRIPT_ADDRESS]     = {0x7a};
@@ -717,11 +764,12 @@ public:
 
         checkpointData = {
             {
-                {127620, uint256S("0xe5ab909fc029b253bad300ccf859eb509e03897e7853e8bfdde2710dbf248dd1")},
+                /*{127620, uint256S("0xe5ab909fc029b253bad300ccf859eb509e03897e7853e8bfdde2710dbf248dd1")},
                 {210920, uint256S("0x5534f546c3b5a264ca034703b9694fabf36d749d66e0659eef5f0734479b9802")},
                 {259290, uint256S("0x58267bdf935a2e0716cb910d055b8cdaa019089a5f71c3db90765dc7101dc5dc")},
                 {312860, uint256S("0xaba2e3b2dcf1970b53b67c869325c5eefd3a107e62518fa4640ddcfadf88760d")},
-                {331600, uint256S("0xeecbeafc4b338901e3dfb6eeaefc128ef477dfe1e6f0f96bd63da27caf113ddc")},
+                {331600, uint256S("0xeecbeafc4b338901e3dfb6eeaefc128ef477dfe1e6f0f96bd63da27caf113ddc")},*/
+                {000000, uint256S("0x0000c0420ebf19eea6de962d12514df51adf033b59dbeddba287e8776fca7064")},
             }
         };
 
@@ -799,11 +847,12 @@ public:
         nPruneAfterHeight = 1000;
 
 
-        genesis = CreateGenesisBlockRegTest(1487714923, 0, 0x207fffff);
+        //genesis = CreateGenesisBlockRegTest(1487714923, 0, 0x207fffff);
+        genesis = CreateGenesisBlockRegTest(1552629600, 1, 0x207fffff);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x6cd174536c0ada5bfa3b8fde16b98ae508fff6586f2ee24cf866867098f25907"));
-        assert(genesis.hashMerkleRoot == uint256S("0xf89653c7208af2c76a3070d436229fb782acbd065bd5810307995b9982423ce7"));
-        assert(genesis.hashWitnessMerkleRoot == uint256S("0x36b66a1aff91f34ab794da710d007777ef5e612a320e1979ac96e5f292399639"));
+        assert(consensus.hashGenesisBlock == uint256S("0x7a81babd1abda210375223841f37ec67007ed627d2e5cff2fe1c38576c190c51"));
+        assert(genesis.hashMerkleRoot == uint256S("0xc324a7aa1a21336fc9afcf0ed8212689e4f21adeb758a9eac83ddb1a1918b645"));
+        assert(genesis.hashWitnessMerkleRoot == uint256S("0xc97d70db9ec6b810bd6302dd1aad68bdbbc2f468e6ad9793b9745cb211a4be0f"));
 
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
@@ -815,7 +864,8 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206")},
+               // {0, uint256S("0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206")},
+               {0, uint256S("0x7a81babd1abda210375223841f37ec67007ed627d2e5cff2fe1c38576c190c51")},
             }
         };
 

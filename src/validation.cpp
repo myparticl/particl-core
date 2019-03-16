@@ -5797,7 +5797,7 @@ bool CChainState::LoadGenesisBlock(const CChainParams& chainparams)
     if (mapBlockIndex.count(chainparams.GenesisBlock().GetHash()))
         return true;
     //Genesis Block created code    
-    uint256 hashGenesisBlock = uint256S("0x0000ee0784c195317ac95623e22fddb8c7b8825dc3998e0bb924d66866eccf4c");
+    /*uint256 hashGenesisBlock = uint256S("0x0000ee0784c195317ac95623e22fddb8c7b8825dc3998e0bb924d66866eccf4c");
     CBlock &block = const_cast<CBlock&>(chainparams.GenesisBlock());
 		printf("%s\n",block.GetHash().ToString().c_str());
 		printf("%s\n",hashGenesisBlock.ToString().c_str());
@@ -5830,10 +5830,10 @@ bool CChainState::LoadGenesisBlock(const CChainParams& chainparams)
         printf("block.hashWitnessMerkleRoot = %s\n", block.hashWitnessMerkleRoot.ToString().c_str());
     }
     //printf"\n");
-    assert(block.GetHash() == hashGenesisBlock);   
+    assert(block.GetHash() == hashGenesisBlock);   */
     
     try {
-        //CBlock &block = const_cast<CBlock&>(chainparams.GenesisBlock());
+        CBlock &block = const_cast<CBlock&>(chainparams.GenesisBlock());
         CDiskBlockPos blockPos = SaveBlockToDisk(block, 0, chainparams, nullptr);
         if (blockPos.IsNull())
             return error("%s: writing genesis block to disk failed", __func__);
