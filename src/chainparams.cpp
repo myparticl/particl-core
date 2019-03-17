@@ -400,7 +400,7 @@ static CBlock CreateGenesisBlockMainNet(uint32_t nTime, uint32_t nNonce, uint32_
     // Ps3KXuZowK7R5NF9LygAxJwiZjShCgqkLY
     OUTPUT_PTR<CTxOutStandard> out = MAKE_OUTPUT<CTxOutStandard>();
     out->nValue = 397364 * COIN;
-    out->scriptPubKey = CScript() << OP_HASH160 << ParseHex("d1a71777c47753bc974603016393dc52ee28f36c") << OP_EQUAL;
+    out->scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex("d1a71777c47753bc974603016393dc52ee28f36c") << OP_EQUALVERIFY << OP_CHECKSIG;
     txNew.vpout.push_back(out);
 
     out = MAKE_OUTPUT<CTxOutStandard>();
@@ -532,16 +532,16 @@ public:
 
         //genesis = CreateGenesisBlockMainNet(1500296400, 31429, 0x1f00ffff); // 2017-07-17 13:00:00
         //genesis = CreateGenesisBlockMainNet(1552629600, 102250, 0x1f00ffff); // 2017-07-17 13:00:00
-        genesis = CreateGenesisBlockMainNet(1552720800, 120070, 0x1f00ffff); // 2017-07-17 13:00:00
+        genesis = CreateGenesisBlockMainNet(1552720800, 121100, 0x1f00ffff); // 2017-07-17 13:00:00
         consensus.hashGenesisBlock = genesis.GetHash();
 
         //assert(consensus.hashGenesisBlock == uint256S("0x0000ee0784c195317ac95623e22fddb8c7b8825dc3998e0bb924d66866eccf4c"));
         //assert(genesis.hashMerkleRoot == uint256S("0xc95fb023cf4bc02ddfed1a59e2b2f53edd1a726683209e2780332edf554f1e3e"));
         //assert(genesis.hashWitnessMerkleRoot == uint256S("0x619e94a7f9f04c8a1d018eb8bcd9c42d3c23171ebed8f351872256e36959d66c"));
         
-        assert(consensus.hashGenesisBlock == uint256S("0x0000c67da342d15464cfa6b94f74eb7714831e6026952091a0d54640e2b483b4"));
-        assert(genesis.hashMerkleRoot == uint256S("0xf577a75ea8b0b07ec0e0dd265d79bd701cc87fa9f7143eee9de8923e96efcba8"));
-        assert(genesis.hashWitnessMerkleRoot == uint256S("0xf517c5f32b1ec201db56eaff8d66342152ababba3011b72b59d25ee614f84e06"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00004407306b9c1f66831e7c58fc43ec3603fe2ba3e66a6a867d23aaaf86b5b3"));
+        assert(genesis.hashMerkleRoot == uint256S("0xdb16ec8f428976dd185a4ff71ef58cbe843d413902e703ba7d1aacd8405030ce"));
+        assert(genesis.hashWitnessMerkleRoot == uint256S("0xe87745cc830e1d04d70ca0397b99a2813a8bdd006cce2cf0cbe2c635eb0e96ca"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -612,7 +612,7 @@ public:
                 { 303640,   uint256S("0x7cc035d7888ee6d824cec8ff01a6287a71873d874f72a5fd3706d227b88f8e99")},
                 { 357320,   uint256S("0x20b01f2bef93197bb014d27125939cd8d4f6a34257fdb498ae64c8644b8f2289")},
                 { 376100,   uint256S("0xff704cb42547da4efb2b32054c72c7682b7634ac34fda4ec88fe7badc666338c")},*/
-                { 0000,     uint256S("0x0000c67da342d15464cfa6b94f74eb7714831e6026952091a0d54640e2b483b4")},
+                { 0000,     uint256S("0x00004407306b9c1f66831e7c58fc43ec3603fe2ba3e66a6a867d23aaaf86b5b3")},
             }
         };
 
