@@ -5830,7 +5830,7 @@ bool CChainState::LoadGenesisBlock(const CChainParams& chainparams)
         printf("block.hashWitnessMerkleRoot = %s\n", block.hashWitnessMerkleRoot.ToString().c_str());
     }
     //printf"\n");
-    assert(block.GetHash() == hashGenesisBlock);   */
+    assert(block.GetHash() == hashGenesisBlock);  */
     
     try {
         CBlock &block = const_cast<CBlock&>(chainparams.GenesisBlock());

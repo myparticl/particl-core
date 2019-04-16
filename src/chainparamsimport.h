@@ -5,10 +5,10 @@
 void AddImportHashesMain(std::vector<CImportedCoinbaseTxn> &vImportedCoinbaseTxns)
 {
     //vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(1,  uint256S("d496208ea84193e0c5ed05ac708aec84dfd2474b529a7608b836e282958dc72b")));
-    vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(1,  uint256S("56f369f8cbdbdd318692e399c2a40a240fd05ae6d3321b3863a8aab03297c693")));
-    vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(2,  uint256S("0a9085591ceca7fa62519a77500f74ddc32e2b6900767b1b0e02092a432250cc")));
+    vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(1,  uint256S("f69bf2522211cd057f2b1cd935ab15da600026659876bf56221321f6d5e2a788")));
+    vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(2,  uint256S("c095ff91b08b01967c46134d56a106b340840483575e50a20e1b3f1db7494cb4")));
     vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(3,  uint256S("328cf4b2ee6902f2f0d77c00a1851158e5ba6ad05725d585d11237aae5553683")));
-    vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(4,  uint256S("13156851b686e8dd915e01616e5fa00fd4c6c7919b5557b0e3ba48213e05223a")));
+    vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(4,  uint256S("767b49714e66c39d08ac074b3b922eaf349109a2fb35b862396beb1b1ac2f136")));
     vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(5,  uint256S("6eae4fd7809a6c9f68f64d0ac65846f4533c6244dca426c7288de0312848ef2a")));
     vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(6,  uint256S("2c5b31eba0c058fa700b53d91b6a7ae4d6a615ac5800261755f1c9309a913c33")));
     vImportedCoinbaseTxns.push_back(CImportedCoinbaseTxn(7,  uint256S("136dfeef9ac5d668399b1279d2bbae0a4a62a11dcb78d4a24ae73a80d03dfe1c")));
